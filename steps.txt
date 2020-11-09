@@ -1,0 +1,9 @@
+1.  Created a react appw ith create-react-app
+2.  Added library-> redux and react-redux
+3.  Cleaned template project to display - "Root Component!!!!"
+4.  Reducers represents the state for each component!
+5.  Create reducer w.r.t. each component/container!
+6.  Combine all reducers so that store can be created!
+7.  Use combined reducers to define the store!!!!
+8.  Use Provider to inject store in RootComponent.
+9.  Use connect to extract store values as props in friend container!
