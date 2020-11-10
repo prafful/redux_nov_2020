@@ -7,3 +7,9 @@
 7.  Use combined reducers to define the store!!!!
 8.  Use Provider to inject store in RootComponent.
 9.  Use connect to extract store values as props in friend container!
+10. Each event is converted to props and then broadcasted.
+11. Broadcast is done with help of actionbroadcaster. Each action broadcast contains event type and payload.
+12. Action broadcast will be captured by reducer. 
+13. Updated reducer is added to store, which now, know about what friend got clicked.
+14. Since, store knows about the friend which go clicked, the app know about it.
+15. Updated store is used in FriendDetail container to display friend name and details!!!!
