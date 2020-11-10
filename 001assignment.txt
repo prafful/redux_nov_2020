@@ -1,0 +1,2 @@
+1. Implement AddFriend Container
+2. Implement functionality for - (minus) button
