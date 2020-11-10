@@ -1,4 +1,4 @@
-const reducerFriendDetail = function createFriendDetailReducer(){
+const reducerFriendDetail = function createFriendDetailReducer(state = null, action){
     var friendDetailExport = [
         {
 
@@ -37,6 +37,24 @@ const reducerFriendDetail = function createFriendDetailReducer(){
             "id": 12
           }
     ]
+    console.log("State in reducerFriendDetail: ")
+    console.log(state)
+    switch (action.type) {
+      case "PLUS_CLICKED":
+        var updatedFriendDetailExport = state.map(friend =>{
+          if(friend.id === action.payload.id){
+            friend.years++
+            return friend
+          }
+          return friend
+        })
+        return updatedFriendDetailExport
+    
+      default:
+        break;
+    }
+
+
 
     return friendDetailExport
 }
